@@ -272,7 +272,56 @@ img.emoji {
 <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://haizgiaa.github.io/mywordress/xmlrpc.php?rsd">
 <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://haizgiaa.github.io/mywordress/wp-includes/wlwmanifest.xml"> 
 <meta name="generator" content="WordPress 6.0.2">
-<!-- Enter your scripts here -->
+<!-- Enter your scripts here --><meta name="generator" content="Powered by Slider Revolution 6.5.30 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface.">
+<script>function setREVStartSize(e){
+			//window.requestAnimationFrame(function() {
+				window.RSIW = window.RSIW===undefined ? window.innerWidth : window.RSIW;
+				window.RSIH = window.RSIH===undefined ? window.innerHeight : window.RSIH;
+				try {
+					var pw = document.getElementById(e.c).parentNode.offsetWidth,
+						newh;
+					pw = pw===0 || isNaN(pw) || (e.l=="fullwidth" || e.layout=="fullwidth") ? window.RSIW : pw;
+					e.tabw = e.tabw===undefined ? 0 : parseInt(e.tabw);
+					e.thumbw = e.thumbw===undefined ? 0 : parseInt(e.thumbw);
+					e.tabh = e.tabh===undefined ? 0 : parseInt(e.tabh);
+					e.thumbh = e.thumbh===undefined ? 0 : parseInt(e.thumbh);
+					e.tabhide = e.tabhide===undefined ? 0 : parseInt(e.tabhide);
+					e.thumbhide = e.thumbhide===undefined ? 0 : parseInt(e.thumbhide);
+					e.mh = e.mh===undefined || e.mh=="" || e.mh==="auto" ? 0 : parseInt(e.mh,0);
+					if(e.layout==="fullscreen" || e.l==="fullscreen")
+						newh = Math.max(e.mh,window.RSIH);
+					else{
+						e.gw = Array.isArray(e.gw) ? e.gw : [e.gw];
+						for (var i in e.rl) if (e.gw[i]===undefined || e.gw[i]===0) e.gw[i] = e.gw[i-1];
+						e.gh = e.el===undefined || e.el==="" || (Array.isArray(e.el) && e.el.length==0)? e.gh : e.el;
+						e.gh = Array.isArray(e.gh) ? e.gh : [e.gh];
+						for (var i in e.rl) if (e.gh[i]===undefined || e.gh[i]===0) e.gh[i] = e.gh[i-1];
+											
+						var nl = new Array(e.rl.length),
+							ix = 0,
+							sl;
+						e.tabw = e.tabhide>=pw ? 0 : e.tabw;
+						e.thumbw = e.thumbhide>=pw ? 0 : e.thumbw;
+						e.tabh = e.tabhide>=pw ? 0 : e.tabh;
+						e.thumbh = e.thumbhide>=pw ? 0 : e.thumbh;
+						for (var i in e.rl) nl[i] = e.rl[i]<window.RSIW ? 0 : e.rl[i];
+						sl = nl[0];
+						for (var i in nl) if (sl>nl[i] && nl[i]>0) { sl = nl[i]; ix=i;}
+						var m = pw>(e.gw[ix]+e.tabw+e.thumbw) ? 1 : (pw-(e.tabw+e.thumbw)) / (e.gw[ix]);
+						newh =  (e.gh[ix] * m) + (e.tabh + e.thumbh);
+					}
+					var el = document.getElementById(e.c);
+					if (el!==null && el) el.style.height = newh+"px";
+					el = document.getElementById(e.c+"_wrapper");
+					if (el!==null && el) {
+						el.style.height = newh+"px";
+						el.style.display = "block";
+					}
+				} catch(e){
+					console.log("Failure at Presize of Slider:" + e)
+				}
+			//});
+		  };</script>
 </head>
 
 <body class="blog qodef-qi--no-touch qi-addons-for-elementor-1.5.4 header-layout-default elementor-default elementor-kit-33">
@@ -346,9 +395,13 @@ img.emoji {
 						<div class="container">
 																<div class="hestia-bottom-footer-content">
 <ul class="footer-menu pull-left">
+<li class="page_item page-item-395"><a href="https://haizgiaa.github.io/mywordress/abc/">abc</a></li>
 <li class="page_item page-item-9 current_page_item"><a href="https://haizgiaa.github.io/mywordress/bai-viet/" aria-current="page">Bài viết</a></li>
-<li class="page_item page-item-53"><a href="https://haizgiaa.github.io/mywordress/">Elementor #53</a></li>
-<li class="page_item page-item-6"><a href="https://haizgiaa.github.io/mywordress/trang-chu/">Trang Chủ</a></li>
+<li class="page_item page-item-378"><a href="https://haizgiaa.github.io/mywordress/contacts/">contacts</a></li>
+<li class="page_item page-item-53"><a href="https://haizgiaa.github.io/mywordress/elementor-53/">Elementor #53</a></li>
+<li class="page_item page-item-376"><a href="https://haizgiaa.github.io/mywordress/home/">Home</a></li>
+<li class="page_item page-item-239"><a href="https://haizgiaa.github.io/mywordress/okd/">OKD</a></li>
+<li class="page_item page-item-6"><a href="https://haizgiaa.github.io/mywordress/">Trang Chủ</a></li>
 </ul>
 <div class="copyright pull-right">Hestia | Thiết kế bởi <a href="https://themeisle.com/" rel="nofollow">ThemeIsle</a>
 </div>
@@ -356,11 +409,24 @@ img.emoji {
 					</footer>
 				</div>
 	</div>
-  <h1 style="position: absolute;left: 9999999px;overflow: hidden;width: 0"><a href="https://solverwp.com/">Solverwp- WordPress Theme and Plugin</a></h1>
+
+		<script>
+			window.RS_MODULES = window.RS_MODULES || {};
+			window.RS_MODULES.modules = window.RS_MODULES.modules || {};
+			window.RS_MODULES.waiting = window.RS_MODULES.waiting || [];
+			window.RS_MODULES.defered = true;
+			window.RS_MODULES.moduleWaiting = window.RS_MODULES.moduleWaiting || {};
+			window.RS_MODULES.type = 'compiled';
+		</script>
+		  <h1 style="position: absolute;left: 9999999px;overflow: hidden;width: 0"><a href="https://solverwp.com/">Solverwp- WordPress Theme and Plugin</a></h1>
 <!-- Enter your scripts here --><style>.wp-container-1 > .alignleft { float: left; margin-inline-start: 0; margin-inline-end: 2em; }.wp-container-1 > .alignright { float: right; margin-inline-start: 2em; margin-inline-end: 0; }.wp-container-1 > .aligncenter { margin-left: auto !important; margin-right: auto !important; }</style>
 <style>.wp-container-2 > .alignleft { float: left; margin-inline-start: 0; margin-inline-end: 2em; }.wp-container-2 > .alignright { float: right; margin-inline-start: 2em; margin-inline-end: 0; }.wp-container-2 > .aligncenter { margin-left: auto !important; margin-right: auto !important; }</style>
 <style>.wp-container-3 > .alignleft { float: left; margin-inline-start: 0; margin-inline-end: 2em; }.wp-container-3 > .alignright { float: right; margin-inline-start: 2em; margin-inline-end: 0; }.wp-container-3 > .aligncenter { margin-left: auto !important; margin-right: auto !important; }</style>
 <style>.wp-container-4 > .alignleft { float: left; margin-inline-start: 0; margin-inline-end: 2em; }.wp-container-4 > .alignright { float: right; margin-inline-start: 2em; margin-inline-end: 0; }.wp-container-4 > .aligncenter { margin-left: auto !important; margin-right: auto !important; }</style>
+<link rel="stylesheet" id="rs-plugin-settings-css" href="https://haizgiaa.github.io/mywordress/wp-content/plugins/revslider/public/assets/css/rs6.css?ver=6.5.30" type="text/css" media="all">
+<style id="rs-plugin-settings-inline-css" type="text/css">#rs-demo-id {}</style>
+<script type="text/javascript" src="https://haizgiaa.github.io/mywordress/wp-content/plugins/revslider/public/assets/js/rbtools.min.js?ver=6.5.18" defer async id="tp-tools-js"></script>
+<script type="text/javascript" src="https://haizgiaa.github.io/mywordress/wp-content/plugins/revslider/public/assets/js/rs6.min.js?ver=6.5.30" defer async id="revmin-js"></script>
 <script type="text/javascript" src="https://haizgiaa.github.io/mywordress/wp-includes/js/jquery/ui/core.min.js?ver=1.13.1" id="jquery-ui-core-js"></script>
 <script type="text/javascript" id="qi-addons-for-elementor-script-js-extra">
 /* <![CDATA[ */
@@ -380,7 +446,7 @@ var requestpost = {"ajaxurl":"http:\/\/localhost:7000\/myproject\/wp-admin\/admi
 <script type="text/javascript" src="https://haizgiaa.github.io/mywordress/wp-content/plugins/ele-blog/assets/js/elementor-script.js?ver=1.0.0" id="ele-blog-elementor-script-js"></script>
 <script type="text/javascript" id="eael-general-js-extra">
 /* <![CDATA[ */
-var localize = {"ajaxurl":"http:\/\/localhost:7000\/myproject\/wp-admin\/admin-ajax.php","nonce":"b6aed24ebd","i18n":{"added":"Added ","compare":"Compare","loading":"Loading..."},"page_permalink":""};
+var localize = {"ajaxurl":"http:\/\/localhost:7000\/myproject\/wp-admin\/admin-ajax.php","nonce":"09629d79ab","i18n":{"added":"Added ","compare":"Compare","loading":"Loading..."},"page_permalink":""};
 /* ]]> */
 </script>
 <script type="text/javascript" src="https://haizgiaa.github.io/mywordress/wp-content/plugins/essential-addons-for-elementor-lite/assets/front-end/js/view/general.min.js?ver=5.2.4" id="eael-general-js"></script>
