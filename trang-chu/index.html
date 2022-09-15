@@ -277,7 +277,56 @@ img.emoji {
 <link rel="shortlink" href="https://haizgiaa.github.io/mywordress/?p=6">
 <link rel="alternate" type="application/json+oembed" href="https://haizgiaa.github.io/mywordress/wp-json/oembed/1.0/embed?url=http%3A%2F%2Flocalhost%3A7000%2Fmyproject%2Ftrang-chu%2F">
 <link rel="alternate" type="text/xml+oembed" href="https://haizgiaa.github.io/mywordress/wp-json/oembed/1.0/embed?url=http%3A%2F%2Flocalhost%3A7000%2Fmyproject%2Ftrang-chu%2F&#038;format=xml">
-<!-- Enter your scripts here -->
+<!-- Enter your scripts here --><meta name="generator" content="Powered by Slider Revolution 6.5.30 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface.">
+<script>function setREVStartSize(e){
+			//window.requestAnimationFrame(function() {
+				window.RSIW = window.RSIW===undefined ? window.innerWidth : window.RSIW;
+				window.RSIH = window.RSIH===undefined ? window.innerHeight : window.RSIH;
+				try {
+					var pw = document.getElementById(e.c).parentNode.offsetWidth,
+						newh;
+					pw = pw===0 || isNaN(pw) || (e.l=="fullwidth" || e.layout=="fullwidth") ? window.RSIW : pw;
+					e.tabw = e.tabw===undefined ? 0 : parseInt(e.tabw);
+					e.thumbw = e.thumbw===undefined ? 0 : parseInt(e.thumbw);
+					e.tabh = e.tabh===undefined ? 0 : parseInt(e.tabh);
+					e.thumbh = e.thumbh===undefined ? 0 : parseInt(e.thumbh);
+					e.tabhide = e.tabhide===undefined ? 0 : parseInt(e.tabhide);
+					e.thumbhide = e.thumbhide===undefined ? 0 : parseInt(e.thumbhide);
+					e.mh = e.mh===undefined || e.mh=="" || e.mh==="auto" ? 0 : parseInt(e.mh,0);
+					if(e.layout==="fullscreen" || e.l==="fullscreen")
+						newh = Math.max(e.mh,window.RSIH);
+					else{
+						e.gw = Array.isArray(e.gw) ? e.gw : [e.gw];
+						for (var i in e.rl) if (e.gw[i]===undefined || e.gw[i]===0) e.gw[i] = e.gw[i-1];
+						e.gh = e.el===undefined || e.el==="" || (Array.isArray(e.el) && e.el.length==0)? e.gh : e.el;
+						e.gh = Array.isArray(e.gh) ? e.gh : [e.gh];
+						for (var i in e.rl) if (e.gh[i]===undefined || e.gh[i]===0) e.gh[i] = e.gh[i-1];
+											
+						var nl = new Array(e.rl.length),
+							ix = 0,
+							sl;
+						e.tabw = e.tabhide>=pw ? 0 : e.tabw;
+						e.thumbw = e.thumbhide>=pw ? 0 : e.thumbw;
+						e.tabh = e.tabhide>=pw ? 0 : e.tabh;
+						e.thumbh = e.thumbhide>=pw ? 0 : e.thumbh;
+						for (var i in e.rl) nl[i] = e.rl[i]<window.RSIW ? 0 : e.rl[i];
+						sl = nl[0];
+						for (var i in nl) if (sl>nl[i] && nl[i]>0) { sl = nl[i]; ix=i;}
+						var m = pw>(e.gw[ix]+e.tabw+e.thumbw) ? 1 : (pw-(e.tabw+e.thumbw)) / (e.gw[ix]);
+						newh =  (e.gh[ix] * m) + (e.tabh + e.thumbh);
+					}
+					var el = document.getElementById(e.c);
+					if (el!==null && el) el.style.height = newh+"px";
+					el = document.getElementById(e.c+"_wrapper");
+					if (el!==null && el) {
+						el.style.height = newh+"px";
+						el.style.display = "block";
+					}
+				} catch(e){
+					console.log("Failure at Presize of Slider:" + e)
+				}
+			//});
+		  };</script>
 </head>
 
 <body class="page-template-default page page-id-6 qodef-qi--no-touch qi-addons-for-elementor-1.5.4 blog-post header-layout-default elementor-default elementor-kit-33">
@@ -323,8 +372,12 @@ img.emoji {
 						<div class="container">
 																<div class="hestia-bottom-footer-content">
 <ul class="footer-menu pull-left">
+<li class="page_item page-item-395"><a href="https://haizgiaa.github.io/mywordress/abc/">abc</a></li>
 <li class="page_item page-item-9"><a href="https://haizgiaa.github.io/mywordress/bai-viet/">Bài viết</a></li>
+<li class="page_item page-item-378"><a href="https://haizgiaa.github.io/mywordress/contacts/">contacts</a></li>
 <li class="page_item page-item-53"><a href="https://haizgiaa.github.io/mywordress/">Elementor #53</a></li>
+<li class="page_item page-item-376"><a href="https://haizgiaa.github.io/mywordress/home/">Home</a></li>
+<li class="page_item page-item-239"><a href="https://haizgiaa.github.io/mywordress/okd/">OKD</a></li>
 <li class="page_item page-item-6 current_page_item"><a href="https://haizgiaa.github.io/mywordress/trang-chu/" aria-current="page">Trang Chủ</a></li>
 </ul>
 <div class="copyright pull-right">Hestia | Thiết kế bởi <a href="https://themeisle.com/" rel="nofollow">ThemeIsle</a>
@@ -333,8 +386,21 @@ img.emoji {
 					</footer>
 				</div>
 	</div>
-  <h1 style="position: absolute;left: 9999999px;overflow: hidden;width: 0"><a href="https://solverwp.com/">Solverwp- WordPress Theme and Plugin</a></h1>
-<!-- Enter your scripts here --><script type="text/javascript" src="https://haizgiaa.github.io/mywordress/wp-includes/js/jquery/ui/core.min.js?ver=1.13.1" id="jquery-ui-core-js"></script>
+
+		<script>
+			window.RS_MODULES = window.RS_MODULES || {};
+			window.RS_MODULES.modules = window.RS_MODULES.modules || {};
+			window.RS_MODULES.waiting = window.RS_MODULES.waiting || [];
+			window.RS_MODULES.defered = true;
+			window.RS_MODULES.moduleWaiting = window.RS_MODULES.moduleWaiting || {};
+			window.RS_MODULES.type = 'compiled';
+		</script>
+		  <h1 style="position: absolute;left: 9999999px;overflow: hidden;width: 0"><a href="https://solverwp.com/">Solverwp- WordPress Theme and Plugin</a></h1>
+<!-- Enter your scripts here --><link rel="stylesheet" id="rs-plugin-settings-css" href="https://haizgiaa.github.io/mywordress/wp-content/plugins/revslider/public/assets/css/rs6.css?ver=6.5.30" type="text/css" media="all">
+<style id="rs-plugin-settings-inline-css" type="text/css">#rs-demo-id {}</style>
+<script type="text/javascript" src="https://haizgiaa.github.io/mywordress/wp-content/plugins/revslider/public/assets/js/rbtools.min.js?ver=6.5.18" defer async id="tp-tools-js"></script>
+<script type="text/javascript" src="https://haizgiaa.github.io/mywordress/wp-content/plugins/revslider/public/assets/js/rs6.min.js?ver=6.5.30" defer async id="revmin-js"></script>
+<script type="text/javascript" src="https://haizgiaa.github.io/mywordress/wp-includes/js/jquery/ui/core.min.js?ver=1.13.1" id="jquery-ui-core-js"></script>
 <script type="text/javascript" id="qi-addons-for-elementor-script-js-extra">
 /* <![CDATA[ */
 var qodefQiAddonsGlobal = {"vars":{"adminBarHeight":0,"iconArrowLeft":"<svg  xmlns=\"http:\/\/www.w3.org\/2000\/svg\" xmlns:xlink=\"http:\/\/www.w3.org\/1999\/xlink\" x=\"0px\" y=\"0px\" viewBox=\"0 0 34.2 32.3\" xml:space=\"preserve\" style=\"stroke-width: 2;\"><line x1=\"0.5\" y1=\"16\" x2=\"33.5\" y2=\"16\"\/><line x1=\"0.3\" y1=\"16.5\" x2=\"16.2\" y2=\"0.7\"\/><line x1=\"0\" y1=\"15.4\" x2=\"16.2\" y2=\"31.6\"\/><\/svg>","iconArrowRight":"<svg  xmlns=\"http:\/\/www.w3.org\/2000\/svg\" xmlns:xlink=\"http:\/\/www.w3.org\/1999\/xlink\" x=\"0px\" y=\"0px\" viewBox=\"0 0 34.2 32.3\" xml:space=\"preserve\" style=\"stroke-width: 2;\"><line x1=\"0\" y1=\"16\" x2=\"33\" y2=\"16\"\/><line x1=\"17.3\" y1=\"0.7\" x2=\"33.2\" y2=\"16.5\"\/><line x1=\"17.3\" y1=\"31.6\" x2=\"33.5\" y2=\"15.4\"\/><\/svg>","iconClose":"<svg  xmlns=\"http:\/\/www.w3.org\/2000\/svg\" xmlns:xlink=\"http:\/\/www.w3.org\/1999\/xlink\" x=\"0px\" y=\"0px\" viewBox=\"0 0 9.1 9.1\" xml:space=\"preserve\"><g><path d=\"M8.5,0L9,0.6L5.1,4.5L9,8.5L8.5,9L4.5,5.1L0.6,9L0,8.5L4,4.5L0,0.6L0.6,0L4.5,4L8.5,0z\"\/><\/g><\/svg>"}};
@@ -354,7 +420,7 @@ var requestpost = {"ajaxurl":"http:\/\/localhost:7000\/myproject\/wp-admin\/admi
 <script type="text/javascript" src="https://haizgiaa.github.io/mywordress/wp-content/plugins/ele-blog/assets/js/elementor-script.js?ver=1.0.0" id="ele-blog-elementor-script-js"></script>
 <script type="text/javascript" id="eael-general-js-extra">
 /* <![CDATA[ */
-var localize = {"ajaxurl":"http:\/\/localhost:7000\/myproject\/wp-admin\/admin-ajax.php","nonce":"b6aed24ebd","i18n":{"added":"Added ","compare":"Compare","loading":"Loading..."},"page_permalink":"http:\/\/localhost:7000\/myproject\/trang-chu\/"};
+var localize = {"ajaxurl":"http:\/\/localhost:7000\/myproject\/wp-admin\/admin-ajax.php","nonce":"09629d79ab","i18n":{"added":"Added ","compare":"Compare","loading":"Loading..."},"page_permalink":"http:\/\/localhost:7000\/myproject\/trang-chu\/"};
 /* ]]> */
 </script>
 <script type="text/javascript" src="https://haizgiaa.github.io/mywordress/wp-content/plugins/essential-addons-for-elementor-lite/assets/front-end/js/view/general.min.js?ver=5.2.4" id="eael-general-js"></script>
